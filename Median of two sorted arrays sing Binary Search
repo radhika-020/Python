@@ -1,0 +1,40 @@
+The time complexity should be not more than O(log(m+n)).
+For example, arr1 = [1,2,3]
+arr2 = [4,5,6]
+then the median would be [1,2,3,4,5,6]
+middle values(here) are = 3, 4, therefore, the median would be 3+4 = 7/2 = 3.5.
+class Solution(object):
+    def findMedianSortedArrays(self, nums1, nums2):
+        """initialising two arrays and applying binary search on te smaller one to find the lefr partition of both the arrays and remember, that the left part of the one array should always be less than the right part of the other array because they are already sorted. This is done to easily find the middle value(s)."""
+        a, b = nums1, nums2
+        total = len(nums1) + len(nums2) 
+        half = total // 2
+        """Legth of both the arrays would be he total, and half length would be find by the floor division of total by 2."""
+        """running binary search on the smaller array, and if A>B, then reverse."""
+        if len(b) < len(a):
+            a, b = b, a
+            """Initialising left and right pointers"""
+        l, r = 0, len(a) - 1
+        while True:
+            i= (l + r) // 2 
+            """for array a"""
+            j = half - i - 2
+            """for array b"""
+            a_left = a[i] if i >=0 else float("-infinity")
+            a_right = a[i+1] if (i+1) <len(a) else float("-infinity")
+            b_left = b[j] if j >=0 else float("-infinity")
+            b_right = b[j+1] if (j+1) < len(b) else float("-infinity")
+            
+            """partition is correct"""
+            if a_left <= b_right and  b_left <= a_right:
+                """odd"""
+                if total%2:
+                    return min(a_right, b_right)
+                
+                """even"""
+                return (max(a_left, b_left) + min(a_right, b_right)) /2
+            elif a_left > b_right:
+                r = i - 1
+            else:
+                l = i + 1
+            
