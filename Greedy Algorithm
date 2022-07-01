@@ -1,0 +1,12 @@
+Greedy algorithm always tries to determine the global optimum, i.e., the optimised solution for a givem problem by selecting the maximum value at a given moment. But it is not always possible to get an optimised solution using a greedy approach. 
+For instance, a tree is given, with a root node as 3, the left node as 4 and the right node as 7. The node 4 contains two children, labelled as values, left - 5, right - 20, and the node 7 also contains two children labelled as values, left - 4, right 11.
+In the above case, the greedy approach will first choose the root node 3, then the node 7 which has higher value, and then the node 11. Which will give us an all total value of 21. 
+But, in the other case, when we go for a more optimised solution, by selecting the root node at first, and then the node with label 4, and then the node with label 20, then we will be getting a value of 27 in total, which is ofcourse a more optimised solution for that specific problem.
+This is one of the major drawback of the greedy approach. Its pros can be, easy to code, easy to implement, faster run time.
+Therefore, in short, in the greedy approach, the global optimum is found selecting a local optimum at that time.
+Main problems following the greedy approach are :-
+1. Huffman Coding
+2. Job Sequencing Problem
+3. Fractional Knapsack Problem
+4. Prim's MST
+5. Activity Selection Problem 
