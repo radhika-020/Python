@@ -9,7 +9,7 @@ def find_closest(arr, target):
   j = n
   mid = 0
   while(i<j):
-    mid = i + (j-i)//2
+    mid = i + (j-i)//2 #value of mid is calculated using this formula due to the higher difference in the low and higher values.
     if arr[mid]==target:
       return arr[mid]
     if arr[mid]>target:
