@@ -1,9 +1,9 @@
 #QUESTION
 #To count the number of times sub string occurring in the main given string.
-ABCDCDC
-CDC
+#ABCDCDC
+#CDC
 
-2
+#2
 
 #CODE
 def count_substring(string, sub_string):
