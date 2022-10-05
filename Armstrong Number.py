@@ -9,7 +9,7 @@ for i in range(length):
   sum1 += pow(digit, length)
   if sum1 == temp:
     print("Armstrong")
-   else:
+  else:
     print("Not Armstrong")
     
 #OR Armstrong Number within a provided range
