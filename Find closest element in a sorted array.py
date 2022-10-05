@@ -1,4 +1,4 @@
-#Given that there is a sorted array, we need to find a number that is equal to or closest to our target value. for example, arr = [1, 2, 3, 4, 5, 6, 7], and target value is 7, then return arr[n-1] and if our target is 8, ten lo return arr[n-1] because 7 is the closest value to 8. Similarly, there can be negative values present too in the given array. 
+#Given that there is a sorted array, we need to find a number that is equal to or closest to our target value. for example, arr = [1, 2, 3, 4, 5, 6, 7], and target value is 7, then return arr[n-1] and if our target is 8, then too return arr[n-1] because 7 is the closest value to 8. Similarly, there can be negative values present too in the given array. 
 def find_closest(arr, target):
   n = len(arr)
   if arr[0]>=target:
