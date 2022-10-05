@@ -16,6 +16,6 @@ class Solution(object):
         
         
         
-Question - Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+"""Question - Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
-Explanation: [4,-1,2,1] has the largest sum = 6, i.e., fond the substring with the largest sum.
+Explanation: [4,-1,2,1] has the largest sum = 6, i.e., fond the substring with the largest sum."""
