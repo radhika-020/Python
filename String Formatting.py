@@ -19,7 +19,7 @@
    16    20    10 10000
    17    21    11 10001"""
    
-  #CODE
+#CODE
 def print_formatted(number):
     # your code goes here
     l = len("{0:b}".format(number))
