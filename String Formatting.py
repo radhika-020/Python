@@ -1,7 +1,7 @@
 #QUESTION
 #Sample Input = 17
 #Saample Output = 
-    1     1     1     1
+""" 1     1     1     1
     2     2     2    10
     3     3     3    11
     4     4     4   100
@@ -17,8 +17,9 @@
    14    16     E  1110
    15    17     F  1111
    16    20    10 10000
-   17    21    11 10001
-#CODE
+   17    21    11 10001"""
+   
+  #CODE
 def print_formatted(number):
     # your code goes here
     l = len("{0:b}".format(number))
