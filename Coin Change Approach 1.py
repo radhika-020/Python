@@ -2,7 +2,6 @@
 
 class Solution:
     def count(self, coins, N, Sum):
-        # code here 
         if Sum == 0:
             return 1
         if Sum < 0:
@@ -11,3 +10,5 @@ class Solution:
             return 0
             
         return self.count(coins, N-1, Sum) + self.count(coins, N, Sum - coins[N-1])
+    
+#Time Complexity = O(N^Sum)
