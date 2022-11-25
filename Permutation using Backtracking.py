@@ -3,7 +3,7 @@ class Solution:
         result = []
         
         if len(nums)==1:
-            return [nums[:]] #Returning list of lists, for eg, [[1]].
+            return [nums[:]] #Returning list of lists, for eg, [[1]]. It can also be written by making the copy of nums inside the list, as [nums.copy()].
         
         for i in range(len(nums)):
             n = nums.pop(0) #At the very first, popping or removing the very first element of the given array, and then calling permute function on the other left.
